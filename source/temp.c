@@ -9,7 +9,9 @@ int main()
 	// scanf("%d %d", &a, &b);	// scanf는 제어문자(e.g. \n)를 사용하면 안된다. 공백은 구분을 위해서만 사용한다.
 	// scanf("%d", &b);
 	result = plus(a,b);
+	printf("%-7d", result);
 	printf("%d", result);
+	
 	// printf("a: %d b: %d", a, b);
 	return 0;
 }
