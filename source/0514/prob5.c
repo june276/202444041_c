@@ -1,0 +1,26 @@
+#include <stdio.h> 
+
+#define DT 3
+
+int main(){
+
+	int score[3];
+	int sum = 0;
+	int cnt;
+	float avg;
+
+	for (cnt=0; cnt<DT; cnt++){
+		printf("과목%d 점수: ___\b\b\b", cnt + 1);
+		scanf("%d", &score[cnt]);
+	}
+
+	for (cnt=0; cnt<DT; cnt++){
+		sum += score[cnt];
+	}
+	avg = (float)sum / DT;
+
+	printf("총점 : %d\n", sum);
+	printf("평균 : %.2f\n", avg);
+
+	return 0;
+}
